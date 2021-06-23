@@ -1,0 +1,25 @@
+{
+  "type": "panel",
+  "name": "Funnel Loyalty",
+  "id": "funnel-loyalty",
+  "dataFormats": ["table"],
+  "info": {
+    "description": "Funnel Loyalty",
+    "author": {
+      "name": "Nam Le"
+    },
+    "keywords": ["funnel"],
+    "logos": {
+      "small": "img/funnel.svg",
+      "large": "img/funnel.svg"
+    },
+    "screenshots": [],
+    "version": "1.0.0",
+    "updated": "2021-06-23"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "6.3.x",
+    "plugins": []
+  }
+}
