@@ -35,7 +35,6 @@ export class MainPanel extends PureComponent<Props, State> {
         this.setState({
           data: [
             { label: 'Visitors', quantity: 0 },
-            { label: 'Engaged Customers', quantity: 0 },
             { label: 'Returning Customers', quantity: 0 },
           ],
           csvData: [],

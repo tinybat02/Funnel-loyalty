@@ -6423,9 +6423,6 @@ function (_super) {
             label: 'Visitors',
             quantity: 0
           }, {
-            label: 'Engaged Customers',
-            quantity: 0
-          }, {
             label: 'Returning Customers',
             quantity: 0
           }],
@@ -6560,19 +6557,19 @@ var processData = function processData(data) {
       total += item;
     });
 
-    if (category.name == '4+ days') {
+    if (category.name == '4+ visits') {
       days_4 = category.fields[0].values.buffer.slice().reverse().find(function (item) {
         return item != null;
       }) || 0;
     }
 
-    if (category.name == '3 days') {
+    if (category.name == '3 visits') {
       days_3 = category.fields[0].values.buffer.slice().reverse().find(function (item) {
         return item != null;
       }) || 0;
     }
 
-    if (category.name == '2 days') {
+    if (category.name == '2 visits') {
       days_2 = category.fields[0].values.buffer.slice().reverse().find(function (item) {
         return item != null;
       }) || 0;

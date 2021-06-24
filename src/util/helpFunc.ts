@@ -11,7 +11,7 @@ export const processData = (data: Array<Frame>) => {
         total += item;
       });
 
-    if (category.name == '4+ days') {
+    if (category.name == '4+ visits') {
       days_4 =
         category.fields[0].values.buffer
           .slice()
@@ -19,7 +19,7 @@ export const processData = (data: Array<Frame>) => {
           .find(item => item != null) || 0;
     }
 
-    if (category.name == '3 days') {
+    if (category.name == '3 visits') {
       days_3 =
         category.fields[0].values.buffer
           .slice()
@@ -27,7 +27,7 @@ export const processData = (data: Array<Frame>) => {
           .find(item => item != null) || 0;
     }
 
-    if (category.name == '2 days') {
+    if (category.name == '2 visits') {
       days_2 =
         category.fields[0].values.buffer
           .slice()
