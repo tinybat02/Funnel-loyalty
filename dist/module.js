@@ -6574,9 +6574,10 @@ var processData = function processData(data) {
         return item != null;
       }) || 0;
     }
-  });
-  var per = Math.round((days_4 + days_3 + days_2) * 100) / 100;
-  var engaged = per * total / 100;
+  }); // const per = Math.round((days_4 + days_3 + days_2) * 100) / 100;
+  // const engaged = (per * total) / 100;
+
+  var engaged = days_4 + days_3 + days_2;
   return {
     csvData: [],
     data: [{

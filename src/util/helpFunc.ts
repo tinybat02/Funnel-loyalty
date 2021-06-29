@@ -36,8 +36,9 @@ export const processData = (data: Array<Frame>) => {
     }
   });
 
-  const per = Math.round((days_4 + days_3 + days_2) * 100) / 100;
-  const engaged = (per * total) / 100;
+  // const per = Math.round((days_4 + days_3 + days_2) * 100) / 100;
+  // const engaged = (per * total) / 100;
+  const engaged = days_4 + days_3 + days_2;
 
   return {
     csvData: [],
